@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-      <h1 class="visually hidden">Барбершоп «Бородинский»</h1>
+      <h1 class="visually hidden">Магазин Барбершопа «Бородинский»</h1>
       <nav class="page-header__nav">
         <div class="page-header__logo">
           <a href="index.html"><img src="#" alt="Барбершоп «Бородинский»"></a>
@@ -23,6 +23,44 @@
         </div>
       </nav>
     </header>
+
+    <main class="page-content">
+      <header class="page-content__header">
+        <h2>Средства для ухода</h2>
+        <nav class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumbs__item"><a>Магазин</a></li>
+            <li class="breadcrumbs__item  breadcrumbs__item--active">Средства для ухода</li>
+          </ul>
+        </nav>
+      </header>
+      <section class="sidebar">
+        <form>
+          <h3>Производители:</h3>
+          <label for="check-baxterofcalifornia">Baxter of California</label>
+          <input id="check-baxterofcalifornia" type="checkbox" name="Baxter of California">
+          <label for="check-mrnatty">Mr Natty</label>
+          <input id="check-mrnatty" type="checkbox" name="Mr Natty">
+          <label for="check-suavecito">Suavecito</label>
+          <input id="check-suavecito" type="checkbox" name="Suavecito">
+          <label for="check-malingoetz">Malin+Goetz</label>
+          <input id="check-malingoetz" type="checkbox" name="Malin+Goetz">
+          <label for="check-murrays">Murray’s</label>
+          <input id="check-murrays" type="checkbox" name="Murray’s">
+          <label for="check-american-crew">American Crew</label>
+          <input id="check-american-crew" type="checkbox" name="American Crew">
+          <h3>Группы товаров:</h3>
+          <label for="group-shaving">Бритвенные принадлежности</label>
+          <input id="group-shaving" type="radio" name="goods-group" value="shaving">
+          <label for="group-care">Средства для ухода</label>
+          <input id="group-care" type="radio" name="goods-group" value="care">
+          <label for="group-accessories">Аксессуары</label>
+          <input id="group-accessories" type="radio" name="goods-group" value="accessories">
+          <button class="btn  sidebar__btn" type="submit">Показать</button>
+        </form>
+      </section>
+    </main>
 
     <footer class="page-footer">
       <p class="page-footer__contacts">

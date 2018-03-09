@@ -86,7 +86,7 @@
       <section class="appointment">
         <h2>Записаться</h2>
         <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-        <form method="post">
+        <form method="post" action="https://echo.htmlacademy.ru/">
           <label for="appointment-date">Дата</label>
           <input id="appointment-date" type="text" name="date" placeholder="08.10.2018">
           <label for="appointment-time">Время</label>
@@ -123,13 +123,13 @@
       </div>
       <div class="page-footer__copyright">
         <b>Разработано:</b>
-        <a href="#"><img src="#" alt="HTML Academy"></a>
+        <a href="#"><img src="https://htmlacademy.ru/intensive/htmlcss" alt="HTML Academy"></a>
       </div>
     </footer>
 
     <section class="popup-login">
       <h2>Личный кабинет</h2>
-      <form method="post">
+      <form method="post" action="https://echo.htmlacademy.ru/">
         <p>Введите, пожалуйста, свой логин и пароль</p>
         <input type="text" name="user-name" placeholder="Логин">
         <input type="password" name="password" placeholder="Пароль">
@@ -138,12 +138,12 @@
         <a href="#">Я забыл пароль!</a>
         <button class="btn  popup-user__btn" type="submit">Войти</button>
       </form>
-      <span>Закрыть</span>
+      <button type="button">Закрыть</button>
     </section>
 
     <section class="popup-map">
       <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A034071ceb10490407a905046f2ddc223eab0f63c0cbe44cc50e6cb5dbc29f844&amp;source=constructor" width="766" height="560"></iframe>
-      <span>Закрыть</span>
+      <button type="button">Закрыть</button>
     </section>
   </body>
 </html>

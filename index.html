@@ -3,101 +3,124 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <h1 class="visually hidden">Барбершоп «Бородинский»</h1>
-      <nav class="page-header__nav">
-        <div class="page-header__logo">
-          <a><img src="img/page-logo.svg" alt="Барбершоп «Бородинский»" width="371" height="155"></a>
-        </div>
-        <ul class="page-header__nav-list">
-          <li class="page-header__nav-item"><a href="info.html">Информация</a></li>
-          <li class="page-header__nav-item"><a href="news.html">Новости</a></li>
-          <li class="page-header__nav-item"><a href="price.html">Прайс-лист</a></li>
-          <li class="page-header__nav-item"><a href="shop.html">Магазин</a></li>
-          <li class="page-header__nav-item"><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <div class="page-header__user-block">
-          <a class="page-header__user-link" href="#">Войти</a>
-        </div>
-      </nav>
+      <h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
+      <div class="container">
+        <nav class="page-header__nav">
+          <div class="page-header__logo">
+            <a><img src="img/page-logo.svg" alt="Барбершоп «Бородинский»" width="371" height="155"></a>
+          </div>
+          <ul class="page-header__nav-list">
+            <li class="page-header__nav-item"><a href="info.html">Информация</a></li>
+            <li class="page-header__nav-item"><a href="news.html">Новости</a></li>
+            <li class="page-header__nav-item"><a href="price.html">Прайс-лист</a></li>
+            <li class="page-header__nav-item"><a href="shop.html">Магазин</a></li>
+            <li class="page-header__nav-item"><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <div class="page-header__user-block">
+            <a class="page-header__user-link" href="#">Войти</a>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="page-content">
-      <section class="advantages">
-        <h2>Наши преимущества</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <h3>Быстро</h3>
-            <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
-          </li>
-          <li class="advantages__item">
-            <h3>Круто</h3>
-            <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
-          </li>
-          <li class="advantages__item">
-            <h3>Дорого</h3>
-            <p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
-          </li>
-        </ul>
-      </section>
+      <div class="container">
+        <section class="advantages">
+          <h2 class="visually-hidden">Наши преимущества</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h3>Быстро</h3>
+              <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
+            </li>
+            <li class="advantages__item">
+              <h3>Круто</h3>
+              <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+            </li>
+            <li class="advantages__item">
+              <h3>Дорого</h3>
+              <p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
+            </li>
+          </ul>
+        </section>
 
-      <section class="news">
-        <h2>Новости</h2>
-        <ul class="news__list">
-          <li class="news__item">
-            <p>Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
-            <time datetime="2018-01-11">11 января</time>
-          </li>
-          <li class="news__item">
-            <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладaтель множества титулов и наград пополнил наши стройные ряды</p>
-            <time datetime="2018-01-18">18 января</time>
-          </li>
-        </ul>
-        <a class="btn" href="news.html">Все новости</a>
-      </section>
+        <div class="page-content-wrap">
+          <section class="news">
+            <h2>Новости</h2>
+            <ul class="news__list">
+              <li class="news__item">
+                <p>Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+                <time datetime="2018-01-11">11 января</time>
+              </li>
+              <li class="news__item">
+                <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладaтель множества титулов и наград пополнил наши стройные ряды</p>
+                <time datetime="2018-01-18">18 января</time>
+              </li>
+            </ul>
+            <a class="btn" href="news.html">Все новости</a>
+          </section>
 
-      <section class="gallery">
-        <h2>Фотогалерея</h2>
-        <figure class="gallery__content">
-          <a href="#"><img src="img/gallery-interior.jpg" alt="Интерьер" width="286" height="164"></a>
-        </figure>
-        <a class="btn  gallety__btn-prev" href="#">Назад</a>
-        <a class="btn  gallety__btn-next" href="#">Вперед</a>
-      </section>
+          <section class="gallery">
+            <h2>Фотогалерея</h2>
+            <figure class="gallery__content">
+              <a href="#"><img src="img/gallery-interior.jpg" alt="Интерьер" width="286" height="164"></a>
+            </figure>
+            <div class="gallery__btn-wrap">
+              <a class="btn" href="#">Назад</a>
+              <a class="btn" href="#">Вперед</a>
+            </div>
+          </section>
+        </div>
 
-      <section class="contacts">
-        <h2>Контактная информация</h2>
-        <p>
-           Барбершоп «Бородинский»<br>
-           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-           Телефон: +7 (812) 666-02-66
-        </p>
-        <p>
-          Время работы:<br>
-          пн—пт: с 10:00 до 22:00<br>
-          сб—вс: с 10:00 до 19:00
-        </p>
-        <a class="btn  contacts__btn-map" href="map.html">Как проехать</a>
-        <a class="btn  contacts__btn-contacts" href="contacts.html">Обратная связь</a>
-      </section>
+        <div class="page-content-wrap">
+          <section class="contacts">
+            <h2>Контактная информация</h2>
+            <p>
+              Барбершоп «Бородинский»<br>
+              Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+              Телефон: +7 (812) 666-02-66
+            </p>
+            <p>
+              Время работы:<br>
+              пн—пт: с 10:00 до 22:00<br>
+              сб—вс: с 10:00 до 19:00
+            </p>
+            <div class="contacts__btn-wrap">
+              <a class="btn" href="map.html">Как проехать</a>
+              <a class="btn" href="contacts.html">Обратная связь</a>
+            </div>
+          </section>
 
-      <section class="appointment">
-        <h2>Записаться</h2>
-        <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-        <form method="post" action="https://echo.htmlacademy.ru/">
-          <label for="appointment-date">Дата</label>
-          <input id="appointment-date" type="text" name="date" placeholder="08.10.2018">
-          <label for="appointment-time">Время</label>
-          <input id="appointment-time" type="text" name="time" placeholder="10:00">
-          <label for="appointment-name">Ваше имя</label>
-          <input id="appointment-name" type="text" name="name" placeholder="Борода">
-          <label for="appointment-phone">Телефон</label>
-          <input id="appointment-phone" type="tel" name="phone" placeholder="+7 123 456-78-90">
-          <button class="btn  appointment__btn" type="submit">Отправить</button>
-        </form>
-      </section>
+          <section class="appointment">
+            <h2>Записаться</h2>
+            <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+            <form class="appointment__form" method="post" action="https://echo.htmlacademy.ru/">
+              <div class="appointment__form-wrap">
+                <label for="appointment-date">Дата</label>
+                <input id="appointment-date" type="text" name="date" placeholder="08.10.2018">
+              </div>
+              <div class="appointment__form-wrap">
+                <label for="appointment-time">Время</label>
+                <input id="appointment-time" type="text" name="time" placeholder="10:00">
+              </div>
+              <div class="appointment__form-wrap">
+                <label for="appointment-name">Ваше имя</label>
+                <input id="appointment-name" type="text" name="name" placeholder="Борода">
+              </div>
+              <div class="appointment__form-wrap">
+                <label for="appointment-phone">Телефон</label>
+                <input id="appointment-phone" type="tel" name="phone" placeholder="+7 123 456-78-90">
+              </div>
+              <button class="btn" type="submit">Отправить</button>
+            </form>
+          </section>
+        </div>
+      </div>
     </main>
 
     <footer class="page-footer">
@@ -109,6 +132,7 @@
       </p>
       <div class="page-footer__social">
         <b>Давайте дружить!</b>
+
         <ul class="page-footer__social-list">
           <li class="page-footer__social-item">
             <a href="#"><img src="img/vk.svg" alt="VK" width="27" height="15"></a>

@@ -17,6 +17,9 @@ body {
   text-transform: uppercase;
 
   background-color: #000000;
+  background-image: url("../img/index-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 a {
@@ -58,6 +61,10 @@ a {
   color: #ffffff;
   text-transform: uppercase;
 
+  background-color: #000000;
+}
+
+.page-header {
   background-color: #000000;
 }
 
@@ -348,9 +355,9 @@ a {
 .appointment__form input {
   width: 140px;
   padding: 0;
-  padding-top: 12px;
+  padding-top: 8px;
   padding-right: 5px;
-  padding-bottom: 12px;
+  padding-bottom: 8px;
   padding-left: 15px;
 
   font-weight: 700;
@@ -384,7 +391,11 @@ a {
 }
 
 .page-footer__contacts {
-  width: 320px;
+  width: 400px;
+  margin: 0;
+}
+
+.page-footer__contacts p {
   margin: 0;
 }
 
@@ -454,11 +465,15 @@ a {
 }
 
 .page-footer__copyright {
-  width: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 380px;
 }
 
 .page-footer__copyright b {
   display: block;
+  width: 140px;
 
   font-size: 14px;
   line-height: 24px;
@@ -474,4 +489,179 @@ a {
   color: #ffffff;
 
   background-color: #000000;
+}
+
+.popup-login {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  display: none;
+  width: 460px;
+  padding-top: 40px;
+  padding-right: 80px;
+  padding-bottom: 30px;
+  padding-left: 80px;
+
+  color: #000000;
+
+  background-color: #f8f5f2;
+  background-image: url(../img/pattern.jpg);
+  transform: translate(-50%, -50%);
+}
+
+.popup-login--wrap {
+  position: relative;
+}
+
+.popup-login h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.popup-login p {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.popup-login input {
+  width: 100%;
+  margin-bottom: 14px;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+
+  background: #f9f6f3;
+  border: 2px solid #000000;
+}
+
+.popup-login input::placeholder {
+  color: #000000;
+}
+
+.popup-login--wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+.popup-login--wrap-item label {
+  position: relative;
+
+  display: block;
+  padding-left: 32px;
+
+  font-size: 14px;
+  line-height: 18px;
+
+  cursor: pointer;
+}
+
+.popup-login--wrap-item input:checked + .checkbox-indicator::before,
+.popup-login--wrap-item input:checked + .checkbox-indicator::after {
+  display: block;
+}
+
+.checkbox-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+
+  border: 2px solid #000000;
+}
+
+.checkbox-indicator::before,
+.checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  left: 7px;
+
+  display: none;
+  width: 2px;
+  height: 14px;
+
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+.checkbox-indicator::after {
+  transform: rotate(-45deg);
+}
+
+.popup-login a {
+  display: block;
+
+  color: #000000;
+  text-decoration: underline;
+}
+
+.popup-user__btn {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.popup-close {
+  position: absolute;
+  top: 8px;
+  right: -34px;
+
+  width: 21px;
+  height: 21px;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-close::before,
+.popup-close::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: 6px;
+
+  width: 5px;
+  height: 23px;
+
+  background-color: #d0d0d0;
+  border-radius: 2px;
+}
+
+.popup-close::before {
+  transform: rotate(45deg);
+}
+
+.popup-close::after {
+  transform: rotate(-45deg);
+}
+
+.popup-map {
+  position: fixed;
+  top: 50%;
+
+  display: none;
+  left: 50%;
+  width: 780px;
+  height: 574px;
+
+  transform: translate(-50%, -50%);
+}
+
+.popup-map--wrap {
+  position: relative;
 }

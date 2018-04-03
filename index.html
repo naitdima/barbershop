@@ -125,12 +125,12 @@
 
     <footer class="page-footer">
       <div class="container">
-        <p class="page-footer__contacts">
-          Барбершоп «Бородинский»<br>
-          Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-          <a class="page-footer__map-link" href="map.html">Как нас найти?</a><br>
-          Телефон: <a href="tel:+74956660266">+7 (495) 666-02-66</a>
-        </p>
+        <div class="page-footer__contacts">
+          <p>Барбершоп «Бородинский»</p>
+          <p>Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <a class="page-footer__map-link" href="map.html">Как нас найти?</a>
+          <p>Телефон: <a href="tel:+74956660266">+7 (495) 666-02-66</a></p>
+        </div>
         <div class="page-footer__social">
           <b>Давайте дружить!</b>
 
@@ -160,22 +160,37 @@
     </footer>
 
     <section class="popup-login">
-      <h2>Личный кабинет</h2>
-      <form method="post" action="https://echo.htmlacademy.ru/">
-        <p>Введите, пожалуйста, свой логин и пароль</p>
-        <input type="text" name="user-name" placeholder="Логин">
-        <input type="password" name="password" placeholder="Пароль">
-        <label for="popup-user-remember">Запомните меня</label>
-        <input id="popup-user-remember" type="checkbox" name="user-remember">
-        <a href="#">Я забыл пароль!</a>
-        <button class="btn  popup-user__btn" type="submit">Войти</button>
-      </form>
-      <button type="button">Закрыть</button>
+      <div class="popup-login--wrap">
+        <h2>Личный кабинет</h2>
+        <form method="post" action="https://echo.htmlacademy.ru/">
+          <p>Введите, пожалуйста, свой логин и пароль</p>
+          <input type="text" name="user-name" placeholder="Логин">
+          <input type="password" name="password" placeholder="Пароль">
+          <div class="popup-login--wrap">
+            <div class="popup-login--wrap-item">
+              <label>
+                <input class="visually-hidden" type="checkbox" name="user-remember">
+                <span class="checkbox-indicator"></span>
+                Запомните меня
+              </label>
+            </div>
+            <a href="#">Я забыл пароль!</a>
+          </div>
+          <button class="btn  popup-user__btn" type="submit">Войти</button>
+        </form>
+        <button class="popup-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </div>
     </section>
 
     <section class="popup-map">
-      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A034071ceb10490407a905046f2ddc223eab0f63c0cbe44cc50e6cb5dbc29f844&amp;source=constructor" width="766" height="560"></iframe>
-      <button type="button">Закрыть</button>
+      <div class="popup-map--wrap">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A034071ceb10490407a905046f2ddc223eab0f63c0cbe44cc50e6cb5dbc29f844&amp;source=constructor" width="766" height="560"></iframe>
+        <button class="popup-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </div>
     </section>
   </body>
 </html>

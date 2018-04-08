@@ -16,11 +16,21 @@
             <a href="index.html"><img src="img/page-header-logo.svg" alt="Барбершоп &#171;Бородинский&#187;" width="111" height="24"></a>
           </div>
           <ul class="page-header__nav-list">
-            <li class="page-header__nav-item"><a href="info.html">Информация</a></li>
-            <li class="page-header__nav-item"><a href="news.html">Новости</a></li>
-            <li class="page-header__nav-item"><a href="price.html">Прайс-лист</a></li>
-            <li class="page-header__nav-item"><a>Магазин</a></li>
-            <li class="page-header__nav-item"><a href="contacts.html">Контакты</a></li>
+            <li class="page-header__nav-item">
+              <a href="#"><span>Информация</span></a>
+            </li>
+            <li class="page-header__nav-item">
+              <a href="#"><span>Новости</span></a>
+            </li>
+            <li class="page-header__nav-item">
+              <a href="price.html"><span>Прайс-лист</span></a>
+            </li>
+            <li class="page-header__nav-item  page-header__nav-item--active">
+              <a><span>Магазин</span></a>
+            </li>
+            <li class="page-header__nav-item">
+              <a href="#"><span>Контакты</span></a>
+            </li>
           </ul>
           <div class="page-header__user-block">
             <a class="page-header__user-link" href="#">Войти</a>
@@ -46,43 +56,43 @@
               <fieldset class="filter__group  filter__group--checkbox">
                 <legend>Производители:</legend>
                 <div class="filter__wrap">
-                  <input class="visually-hidden" id="check-baxterofcalifornia" type="checkbox" name="Baxter of California">
-                  <label for="check-baxterofcalifornia">Baxter of California</label>
+                  <input class="visually-hidden  filter__group--checkbox-input" id="check-baxterofcalifornia" type="checkbox" name="Baxter of California" checked>
+                  <label class="filter__group--checkbox-label" for="check-baxterofcalifornia"><span></span>Baxter of California</label>
                 </div>
                 <div class="filter__wrap">
-                  <input class="visually-hidden" id="check-mrnatty" type="checkbox" name="Mr Natty">
-                  <label for="check-mrnatty">Mr Natty</label>
+                  <input class="visually-hidden  filter__group--checkbox-input" id="check-mrnatty" type="checkbox" name="Mr Natty">
+                  <label class="filter__group--checkbox-label" for="check-mrnatty"><span></span>Mr Natty</label>
                 </div>
                 <div class="filter__wrap">
-                  <input class="visually-hidden" id="check-suavecito" type="checkbox" name="Suavecito">
-                  <label for="check-suavecito">Suavecito</label>
+                  <input class="visually-hidden  filter__group--checkbox-input" id="check-suavecito" type="checkbox" name="Suavecito" checked>
+                  <label class="filter__group--checkbox-label" for="check-suavecito"><span></span>Suavecito</label>
                 </div>
                 <div class="filter__wrap">
-                  <input class="visually-hidden" id="check-malingoetz" type="checkbox" name="Malin+Goetz">
-                  <label for="check-malingoetz">Malin+Goetz</label>
+                  <input class="visually-hidden  filter__group--checkbox-input" id="check-malingoetz" type="checkbox" name="Malin+Goetz">
+                  <label class="filter__group--checkbox-label" for="check-malingoetz"><span></span>Malin+Goetz</label>
                 </div>
                 <div class="filter__wrap">
-                  <input class="visually-hidden" id="check-murrays" type="checkbox" name="Murray’s">
-                  <label for="check-murrays">Murray’s</label>
+                  <input class="visually-hidden  filter__group--checkbox-input" id="check-murrays" type="checkbox" name="Murray’s">
+                  <label class="filter__group--checkbox-label" for="check-murrays"><span></span>Murray’s</label>
                 </div>
                 <div class="filter__wrap">
-                  <input class="visually-hidden" id="check-american-crew" type="checkbox" name="American Crew">
-                  <label for="check-american-crew">American Crew</label>
+                  <input class="visually-hidden  filter__group--checkbox-input" id="check-american-crew" type="checkbox" name="American Crew" checked>
+                  <label class="filter__group--checkbox-label" for="check-american-crew"><span></span>American Crew</label>
                 </div>
               </fieldset>
               <fieldset class="filter__group  filter__group--radio">
                 <legend>Группы товаров:</legend>
                 <div class="filter__wrap">
-                  <input class="visually-hidden" id="group-shaving" type="radio" name="goods-group" value="shaving">
-                  <label for="group-shaving">Бритвенные принадлежности</label>
+                  <input class="visually-hidden  filter__group--radio-input" id="group-shaving" type="radio" name="goods-group" value="shaving">
+                  <label class="filter__group--radio-label" for="group-shaving"><span></span>Бритвенные принадлежности</label>
                 </div>
                 <div class="filter__wrap">
-                  <input class="visually-hidden" id="group-care" type="radio" name="goods-group" value="care">
-                  <label for="group-care">Средства для ухода</label>
+                  <input class="visually-hidden  filter__group--radio-input" id="group-care" type="radio" name="goods-group" value="care" checked>
+                  <label class="filter__group--radio-label" for="group-care"><span></span>Средства для ухода</label>
                 </div>
                 <div class="filter__wrap">
-                  <input class="visually-hidden" id="group-accessories" type="radio" name="goods-group" value="accessories">
-                  <label for="group-accessories">Аксессуары</label>
+                  <input class="visually-hidden  filter__group--radio-input" id="group-accessories" type="radio" name="goods-group" value="accessories">
+                  <label class="filter__group--radio-label" for="group-accessories"><span></span>Аксессуары</label>
                 </div>
               </fieldset>
               <button class="btn  filter__btn" type="submit">Показать</button>
